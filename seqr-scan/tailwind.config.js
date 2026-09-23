@@ -3,9 +3,19 @@ const { hairlineWidth } = require('nativewind/theme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
   presets: [require('nativewind/preset')],
   theme: {
+    screens: {
+      xs: "360px",  // Android small
+      sm: "390px",  // iPhone 14/15
+      md: "430px",  // iPhone Pro Max
+      lg: "768px",  // iPad Mini
+      xl: "834px",  // iPad Air
+      "2xl": "1024px", // iPad Pro
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',

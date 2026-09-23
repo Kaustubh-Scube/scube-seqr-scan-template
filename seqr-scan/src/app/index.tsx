@@ -29,7 +29,7 @@ export default function Screen() {
   return (
     <>
       <Stack.Screen options={SCREEN_OPTIONS} />
-      <View className="flex-1 items-center justify-center gap-8 p-4" style={{ flex: 1, alignItems: 'center', justifyContent: "center", gap: 32, padding: 16 }}>
+      <View className="flex-1 items-center justify-center gap-8 p-4">
         <Image source={LOGO[colorScheme ?? 'light']} style={IMAGE_STYLE} resizeMode="contain" />
         <View className="gap-2 p-4">
           <Text className="ios:text-foreground font-mono text-sm text-muted-foreground">

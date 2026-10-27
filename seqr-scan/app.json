@@ -7,16 +7,19 @@
     "icon": "./src/assets/images/icon.png",
     "scheme": "seqr-scan",
     "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.kaustubhscube.seqrscan"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.scube.seqrscan"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.kaustubhscube.seqrscan"
+      "package": "com.scube.seqrscan"
     },
     "web": {
       "bundler": "metro",
@@ -30,7 +33,16 @@
         {
           "image": "./src/assets/images/splash.png",
           "resizeMode": "contain",
+          "imageWidth": 200,
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan university certificate QR codes",
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": true
         }
       ],
       "expo-status-bar",
@@ -38,6 +50,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "84e57e5f-9acb-4ea6-9a8b-e398e0aead2b"
+      }
     }
   }
 }

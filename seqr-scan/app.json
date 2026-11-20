@@ -4,7 +4,7 @@
     "slug": "seqr-scan",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/images/icon.png",
+    "icon": "./src/assets/images/logos/icon.png",
     "scheme": "seqr-scan",
     "userInterfaceStyle": "automatic",
     "assetBundlePatterns": [
@@ -16,7 +16,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "foregroundImage": "./src/assets/images/logos/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.scube.seqrscan"
@@ -31,7 +31,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./src/assets/images/splash.png",
+          "image": "./src/assets/images/logos/splash-icon.png",
           "resizeMode": "contain",
           "imageWidth": 200,
           "backgroundColor": "#ffffff"
